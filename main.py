@@ -22,7 +22,7 @@ def home():
 
 # input box & buttons navigates with query params
 # use query param to send search event (if present)
-@app.route('/dj-explorer', methods=['GET', 'POST'])
+@app.route('/mix-explorer', methods=['GET', 'POST'])
 def dj_explorer():
     return render_template('search.html')
 
