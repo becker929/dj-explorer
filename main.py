@@ -16,10 +16,14 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'gurdenwurdermaldehyde'
 socketio = SocketIO(app, logger=True, engineio_logger=True) #, async_mode='eventlet')
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 # input box & buttons navigates with query params
 # use query param to send search event (if present)
-@app.route('/', methods=['GET', 'POST'])
-def test():
+@app.route('/dj-explorer', methods=['GET', 'POST'])
+def dj_explorer():
     return render_template('search.html')
 
 @socketio.on('search')
