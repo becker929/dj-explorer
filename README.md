@@ -17,6 +17,8 @@ This will run the Flask server, which can the be accessed via the browser at htt
 
 I am running this on a Google Compute Engine Linux VM and serving it at http://anthonybecker.xyz/mix-explorer . 
 
+Example search: http://anthonybecker.xyz/mix-explorer?q=https://soundcloud.com/adambeyer/dcr207-drumcode-radio-live-adam-beyer-live-from-carl-cox-at-space-ibiza
+
 You can also find my resume at http://anthonybecker.xyz/resume . 
 
 
