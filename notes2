@@ -1,0 +1,61 @@
+15s - 1m
+01. Monika Kruse - Summer Drops [Nicole Moudaber remix] - Terminal M
+x 02. Julian Jeweil - Los Pistolos - MINUSMAX21
+x 03. Sam Paganini - Another Chance - Drumcode
+04. Lowboys - Lost In A Dream - Bitten
+05. Paride Saraceni - Domino Effect - Agile
+x 06. Sharam, Manfred Mann’s Earth Band - Tripi feat. Manfred Mann’s Earth Band - Play it Say it
+x 07. Chus & Ceballos, Leonardo Gonnelli - Soledad - Stereo
+x 08. Sam Paganini - Lotus - Drumcode
+09. Zoe Xenia - Crazy [Cari Lekebusch remix] - Monique Musique
+10. Drunken Kong - Beat It - Unity
+11. Pig & Dan - Power - Elevate
+12. Dolby D & Tom Cohen - Air Drop [Frank Savio remix] - Seqdor
+x 13. Bart Skils _ Shadowprint - Drumcode
+14. Paul Ritch - Inside Me - Drumcode
+
+30s - 30s
+x 01. Monika Kruse - Summer Drops [Nicole Moudaber remix] - Terminal M
+x 02. Julian Jeweil - Los Pistolos - MINUSMAX21
+x 03. Sam Paganini - Another Chance - Drumcode
+04. Lowboys - Lost In A Dream - Bitten
+05. Paride Saraceni - Domino Effect - Agile
+x 06. Sharam, Manfred Mann’s Earth Band - Tripi feat. Manfred Mann’s Earth Band - Play it Say it
+x 07. Chus & Ceballos, Leonardo Gonnelli - Soledad - Stereo
+x 08. Sam Paganini - Lotus - Drumcode
+09. Zoe Xenia - Crazy [Cari Lekebusch remix] - Monique Musique
+10. Drunken Kong - Beat It - Unity
+11. Pig & Dan - Power - Elevate
+12. Dolby D & Tom Cohen - Air Drop [Frank Savio remix] - Seqdor
+x 13. Bart Skils _ Shadowprint - Drumcode
+14. Paul Ritch - Inside Me - Drumcode
+
+1m - 1m
+01. Monika Kruse - Summer Drops [Nicole Moudaber remix] - Terminal M
+x 02. Julian Jeweil - Los Pistolos - MINUSMAX21
+x 03. Sam Paganini - Another Chance - Drumcode
+04. Lowboys - Lost In A Dream - Bitten
+05. Paride Saraceni - Domino Effect - Agile
+x 06. Sharam, Manfred Mann’s Earth Band - Tripi feat. Manfred Mann’s Earth Band - Play it Say it
+x 07. Chus & Ceballos, Leonardo Gonnelli - Soledad - Stereo
+x 08. Sam Paganini - Lotus - Drumcode
+09. Zoe Xenia - Crazy [Cari Lekebusch remix] - Monique Musique
+10. Drunken Kong - Beat It - Unity
+11. Pig & Dan - Power - Elevate
+12. Dolby D & Tom Cohen - Air Drop [Frank Savio remix] - Seqdor
+x 13. Bart Skils _ Shadowprint - Drumcode
+14. Paul Ritch - Inside Me - Drumcode
+
+curl 'https://cf-hls-media.sndcdn.com/media/11495130/11654789/SwZrmRgltTUy.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLWhscy1tZWRpYS5zbmRjZG4uY29tL21lZGlhLyovKi9Td1pybVJnbHRUVXkuMTI4Lm1wMyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTYyNTk4MjMzNH19fV19&Signature=SCgAsMUINyIz960dH18EOLmMHsFYeSvIsWp4jda9vIshcY0dJnd13e17GJyPHr3W8C6g3h97gAAnwg2wZO5VrhWB7TrplU9fgbiTxRAvcPKbcL-3WAefiny37PiELpg~4fJF04GGqbQi09UfqJk2I48FkcZQA0KF4Vsajt4DGhmWJueV4shH-KXAymtJk1yvVgxs62iJLcyvKiMn7Lo0odT-tKAOUT9~bZ9U~gQDk7DNESjOpphfMp8YZ5tDdm0X~xTWoU7cDsryFRu012jBX1C8Wr-e-zomAG1eSofiQKvUUJZ8TWWuXC30HzEtRNZYX4Pp9vDcyU9mcAE2lLPBBw__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ' \
+  -H 'authority: cf-hls-media.sndcdn.com' \
+  -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36' \
+  -H 'accept: */*' \
+  -H 'origin: https://soundcloud.com' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'referer: https://soundcloud.com/' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  --compressed

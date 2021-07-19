@@ -66,6 +66,7 @@ def handle_search_event(json_obj, methods=['GET', 'POST']):
     except Exception as e:
         print('exception:', e)
         socketio.emit('message', {'embed': 'There was a problem getting the track.'}, room=request.sid)
+        socketio.emit('done', room=request.sid)
         return
 
     # prepare search request
