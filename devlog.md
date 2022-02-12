@@ -36,3 +36,7 @@ On the plus side, I discovered `git add -i`
 ![`git add -i`](static/3.png)
 
 Also, got my precious 100kbs of images back because thankfully I'd copied them from the desktop.
+
+One hint is that the server appears to be initialized twice every time I run the app.
+
+Looks like the basic issue is that I needed to remove `eventlet` `monkey_patch`ing. `threading` was the `async_mode` being used. Now, there is a problem getting the example track. Perhaps the HTML schema has changed?
