@@ -1,20 +1,25 @@
 import eventlet
+
 eventlet.monkey_patch()
 
-from flask import Flask, request, render_template, redirect, url_for
-from flask_socketio import SocketIO
-import requests, json, re, glob, os, traceback
+import glob
+import json
+import logging
+import os
+import re
+import time
+import traceback
+from urllib.parse import unquote
+
+import requests
+import youtube_dl
 from bs4 import BeautifulSoup as bs
+from flask import Flask, redirect, render_template, request, url_for
+from flask_socketio import SocketIO
+from pydub import AudioSegment
 
 import test_email
 
-from urllib.parse import unquote
-import youtube_dl
-from pydub import AudioSegment
-
-import time
-
-import logging
 logging.basicConfig(filename='search.log', format='%(asctime)s %(message)s')
 
 # there's probably a better way to do this to be compatible

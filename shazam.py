@@ -1,6 +1,9 @@
-import asyncio, sys
-from shazamio import Shazam
+import asyncio
+import sys
+
 from pydub import AudioSegment
+from shazamio import Shazam
+
 
 class ShazamSearch(Shazam):
     async def recognize_song(self, audio: bytes):

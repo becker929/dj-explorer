@@ -1,7 +1,11 @@
 from __future__ import unicode_literals
 
-import glob, os, asyncio, traceback
+import asyncio
+import glob
+import os
+import traceback
 from urllib.parse import unquote
+
 import youtube_dl
 from pydub import AudioSegment
 from shazamio import Shazam
