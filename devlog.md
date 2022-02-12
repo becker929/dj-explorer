@@ -31,3 +31,8 @@ I'm starting to think I might want to start a clean repo and produce a sequence 
 
 Also, I deleted my beautiful screenshots above because I didn't realize `git rm` would actually delete files when the `--cached` flag wasn't used.
 
+On the plus side, I discovered `git add -i`
+
+![`git add -i`](static/3.png)
+
+Also, got my precious 100kbs of images back because thankfully I'd copied them from the desktop.
