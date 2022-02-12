@@ -1,7 +1,3 @@
-import eventlet
-
-eventlet.monkey_patch()
-
 import glob
 import json
 import logging
@@ -22,15 +18,10 @@ import test_email
 
 logging.basicConfig(filename="search.log", format="%(asctime)s %(message)s")
 
-# there's probably a better way to do this to be compatible
-# with flask & eventlet
-# loop = asyncio.get_event_loop()
-
 # Flask app
 app = Flask(__name__)
 # app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 socketio = SocketIO(app, logger=True, engineio_logger=True)
-print(f"*** socketio async_mode: {async_mode}")
 
 
 @app.route("/")
@@ -212,8 +203,6 @@ def handle_search_event(json_obj, methods=["GET", "POST"]):
                 byte_index = get_byte_index()
 
                 if audio_length - byte_index >= min_segment_bytes:
-                    # ASK SHAZAM SERVER FOR THE SEARCH RESULT
-                    # because asyncio doesn't play nicely with eventlet/monkey_patch
                     # request: recognize(file_name, byte_index, len(all_bytes))
                     # sometimes the temp file might not be available or did not grow as expected,
                     # it might even shrink at the end of the download process
