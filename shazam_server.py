@@ -21,24 +21,26 @@ class ShazamSearch(Shazam):
         results = await self.send_recognize_request(signature)
         return results
 
+
 shazam = ShazamSearch()
 
 # Flask app
 app = Flask(__name__)
 
-@app.route('/')
-def recognize():
-    file_name = request.args.get('file-name')
-    start_byte = int(request.args.get('start-byte'))
-    end_byte = int(request.args.get('end-byte'))
 
-    audio_file = open(file_name, 'rb')
+@app.route("/")
+def recognize():
+    file_name = request.args.get("file-name")
+    start_byte = int(request.args.get("start-byte"))
+    end_byte = int(request.args.get("end-byte"))
+
+    audio_file = open(file_name, "rb")
     all_bytes = audio_file.read()
     current_bytes = all_bytes[start_byte:end_byte]
 
     result = loop.run_until_complete(shazam.recognize_song(current_bytes))
     return result
 
-if __name__ == '__main__':
-    Flask.run(app, host='127.0.0.1', port=8081, debug=False)
 
+if __name__ == "__main__":
+    Flask.run(app, host="127.0.0.1", port=8081, debug=False)
