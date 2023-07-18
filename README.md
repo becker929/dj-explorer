@@ -44,9 +44,3 @@ flask shell
 ```
 
 This will run the Flask server, which can the be accessed via the browser at http://0.0.0.0:80/mix-explorer . 
-
-Example search: http://anthonybecker.xyz/mix-explorer/example .
-
-You can also find my resume at http://anthonybecker.xyz/resume . 
-
-
